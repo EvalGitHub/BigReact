@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "rimraf dist && rollup --config scripts/rollup/react.config.js"
   },
   "keywords": [],
   "author": "",
@@ -12,9 +13,12 @@
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
     "@eslint/js": "^9.32.0",
+    "@rollup/plugin-commonjs": "^28.0.6",
     "eslint": "^9.32.0",
     "globals": "^16.3.0",
     "jiti": "^2.5.1",
+    "rimraf": "^6.0.1",
+    "rollup-plugin-typescript2": "^0.36.0",
     "typescript-eslint": "^8.38.0"
   }
 }
